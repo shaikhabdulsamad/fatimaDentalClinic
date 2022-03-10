@@ -1,0 +1,123 @@
+
+body{
+    background-color: rgb(230, 240, 255) !important;
+}
+a {
+    text-decoration: none;
+   
+}
+.navbar{
+    background-color: rgb(0, 20, 51) ;
+    
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(153, 194, 255) !important;
+}
+
+
+.nav-link {
+    transition: all .2s !important;
+    border-bottom: 2px solid transparent;
+    color: rgb(153, 194, 255) !important;
+    font-size: 16px !important;
+   
+}
+
+.nav-link:hover {
+    border-bottom: 2px solid white ;
+    color: white !important;
+  
+}
+
+.fa-bars{
+    color: white !important;
+}
+.carousel-item>img{
+    height: 70vh;
+}
+.secHead{
+    
+    text-align: center;
+    color: rgb(0, 20, 51);
+     display: flex;
+    justify-content: center;
+   
+}
+.secHead>h2{
+    border-bottom: 5px solid rgb(0, 20, 51);
+    width: fit-content;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.card{
+    background-color: rgb(0, 41, 102) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+    transition: all 0.5s;
+cursor: pointer;
+}
+.card:hover{
+  background-color: rgb(0, 20, 51) !important;
+  
+}
+.card:hover .card-body{
+ 
+  color: rgb(153, 194, 255) !important;
+}
+.card>img{
+    width: 100px;
+    margin: 5px 0;
+}
+.card-body{
+ 
+    color: white;
+    text-align: center;
+}
+.card-text{
+    font-size: 14px !important;
+}
+.secContent{
+    display: flex;
+ 
+}
+
+
+
+@media only screen and (max-width:990px){
+  
+    
+    .secContent{
+       flex-direction: column-reverse;
+     
+    }
+    .secContent{
+        margin-top: 0 !important;
+    }
+    .secContent>p{
+        margin-top: 10px;
+    }
+    .navbar-collapse{
+        position: absolute;
+        z-index: 2;
+        top:80px;
+        right: 20px;
+        background-color: rgb(0, 20, 51);
+        padding: 20px 30px;
+    }
+}
+@media only screen and (max-width:570px){
+  
+    .navbar-collapse{
+    right: 10px;
+    }
+    .logo>h3 {
+       font-size: 18px !important;
+    }
+}
