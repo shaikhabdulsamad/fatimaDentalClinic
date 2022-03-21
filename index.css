@@ -1,75 +1,97 @@
 
-body{
-    background-color: rgb(230, 240, 255) !important;
-}
 a {
     text-decoration: none;
    
 }
 .navbar{
-    background-color: rgb(0, 20, 51) ;
-    
+    background-color: rgba(169, 169, 169, 0.568);
+    position: fixed !important;
+    z-index: 2;
+    top: 0;
+    left: 0;
+width: 100%;
+padding: 0 !important;
+
 }
 
 .logo {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: rgb(153, 194, 255) !important;
-}
 
+}
+.logo_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    color: black !important;
+    /* font-weight: bold; */
+    margin-left: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+}
 
 .nav-link {
     transition: all .2s !important;
     border-bottom: 2px solid transparent;
-    color: rgb(153, 194, 255) !important;
+    color: black !important;
     font-size: 16px !important;
+    font-weight: bold;
    
 }
 
 .nav-link:hover {
-    border-bottom: 2px solid white ;
-    color: white !important;
+    border-bottom: 2px solid black ;
+    color: rgb(230, 25, 25) !important;
   
 }
 
+
 .fa-bars{
-    color: white !important;
+    color: black !important;
+}
+
+.slider{
+    position: relative;
+    height: 100vh;
 }
 .carousel-item>img{
-    height: 70vh;
+    height: 100vh;
 }
+.carousel-caption{
+    color: white !important;
+}
+
 .secHead{
     
     text-align: center;
-    color: rgb(0, 20, 51);
+    color: black;
      display: flex;
     justify-content: center;
    
 }
 .secHead>h2{
-    border-bottom: 5px solid rgb(0, 20, 51);
+    border-bottom: 5px solid black;
     width: fit-content;
   margin-bottom: 20px;
   font-weight: bold;
 }
 
 .card{
-    background-color: rgb(0, 41, 102) !important;
+    background-color: 	rgb(230, 25, 25) !important;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 5px;
     transition: all 0.5s;
 cursor: pointer;
+box-shadow: 0 4px 8px 0 rgba(204, 0, 0, 0.431)
 }
-.card:hover{
-  background-color: rgb(0, 20, 51) !important;
-  
-}
+
 .card:hover .card-body{
  
-  color: rgb(153, 194, 255) !important;
+  color: white !important;
 }
 .card>img{
     width: 100px;
@@ -77,7 +99,7 @@ cursor: pointer;
 }
 .card-body{
  
-    color: white;
+    color: black;
     text-align: center;
 }
 .card-text{
@@ -87,7 +109,69 @@ cursor: pointer;
     display: flex;
  
 }
+.heading {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 0.3em;
+   
+}
+form {
+    width: 100%;
+    background-color: #212529;
+}
 
+input,
+textarea {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1em;
+    padding: 0.5em 1em;
+    border: none;
+    outline: none;
+    background-color: #212529;
+    color: white;
+}
+
+
+.twoInp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.twoInp>input {
+    width: 48%;
+}
+
+footer{
+    background-color: rgb(51, 51, 51);
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    color: white;
+    padding: 5px 0;
+    font-size: 16px;
+}
+.portfolioLink{
+    text-decoration: none;
+}
+.detail{
+    display: flex;
+justify-content: space-between;
+}
+.form{
+    flex: 1;
+}
+.map{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
 
 
 @media only screen and (max-width:990px){
@@ -106,9 +190,9 @@ cursor: pointer;
     .navbar-collapse{
         position: absolute;
         z-index: 2;
-        top:80px;
+        top:90px;
         right: 20px;
-        background-color: rgb(0, 20, 51);
+        background-color: rgba(169, 169, 169, 0.568);
         padding: 20px 30px;
     }
 }
@@ -119,5 +203,8 @@ cursor: pointer;
     }
     .logo>h3 {
        font-size: 18px !important;
+    }
+    .footer{
+       flex-direction: column;
     }
 }
