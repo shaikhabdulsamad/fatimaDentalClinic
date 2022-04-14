@@ -114,6 +114,15 @@ box-shadow: 0 4px 8px 0 rgba(204, 0, 0, 0.431)
     display: flex;
  
 }
+.ownerDetail{
+    display: flex;
+}
+.ownerIntro{
+    flex: 2;
+}
+ .ownerImg{
+    flex: 1;
+}
 .heading {
     font-size: 3.5rem;
     font-weight: bold;
@@ -196,7 +205,7 @@ justify-content: space-between;
     color: white;
    font-size: 10rem;
 }
-.fa-flask{
+.fa-flask , .fa-solid{
     color: white;
    font-size: 7rem;
 }
@@ -212,7 +221,7 @@ table tr td {
 padding: 2px 10px;
 color: white;
 }
-h3{
+.col-md-3>h3{
     color: white;
     margin: 20px 0px 10px 0px !important;
     
