@@ -52,7 +52,24 @@ padding: 0 !important;
     border-bottom: 2px solid black ;
     color: rgb(230, 25, 25) !important;
 }
-
+.dropdown-menu{
+    padding: 10px 0px !important;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,0.8);
+    z-index: 2;
+}
+.dropdown-menu>li>a{
+  
+    /* border-bottom: 2px solid transparent; */
+    color: black !important;
+    font-size: 16px !important;
+    font-weight: 600;
+  background-color: white !important;
+}
+.dropdown-item:hover{
+    /* border-bottom: 2px solid black ; */
+    color: rgb(230, 25, 25) !important;
+  
+}
 .fa-bars{
     color: black !important;
 }
@@ -84,14 +101,14 @@ padding: 0 !important;
 }
 
 .card{
-    background-color: 	rgb(230, 25, 25) !important;
+    background-color: 	rgb(210, 41, 41) !important;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px 5px;
     transition: all 0.5s;
 cursor: pointer;
-box-shadow: 0 4px 8px 0 rgba(204, 0, 0, 0.431)
+box-shadow: 0 4px 8px 0 rgba(210, 0, 0, 0.431)
 }
 
 .card:hover .card-body{
@@ -99,7 +116,7 @@ box-shadow: 0 4px 8px 0 rgba(204, 0, 0, 0.431)
   color: white !important;
 }
 .card>img{
-    width: 100px;
+    /* width: 100px; */
     margin: 5px 0;
 }
 .card-body{
@@ -211,7 +228,7 @@ justify-content: space-between;
 }
 
 .subfooter{
-    background-color: rgb(230, 25, 25);
+    background-color: rgb(210, 41, 41);
 }
 
 table tr{
@@ -296,6 +313,9 @@ ul li a:hover{
       flex-direction: column;
       text-align: center;
       /* margin: 0 5px; */
+  }
+  .reachus>li{
+      color: white;
   }
 @media only screen and (max-width:990px){
   
