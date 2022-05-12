@@ -10,10 +10,16 @@ function scrollFunction() {
   
   }   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
     document.getElementById("navbar").style.boxShadow = '0 4px 8px 0 rgb(0, 0, 0, 0.431)'
+    document.getElementById("navbar").style.top = '0'
   
-  } else{
+  }
+  if(document.body.scrollTop < 20 || document.documentElement.scrollTop < 20){
+    document.getElementById("navbar").style.top = '10'
+  }
+   else{
     document.getElementById("navbar").style.backgroundColor = 'rgba(169, 169, 169, 0.568)'
     document.getElementById("navbar").style.boxShadow = 'none'
+   
   }
 }
   
